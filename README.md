@@ -17,36 +17,36 @@ Projeto Voltado para avaliação de conhecimento em next.js e json-server para c
 * <b>Em Construção</b> ...
 
 ## :rocket: Rodando o projeto
-# Clone este repositório
+## Clone este repositório
 ```bash
-  git clone
+  git clone https://github.com/Alxdelira/projeto-avaliativo-frameworks.git
 ```
-# Acesse a pasta do projeto no terminal/cmd
+## Acesse a pasta do projeto no terminal/cmd
 ```bash
-    cd
+    cd "nome da pasta"
 ```
 
-# Instale as dependências
+## Instale as dependências
 ```bash
     npm install
 ```
 
-# Execute a aplicação em modo de desenvolvimento
+## Execute a aplicação em modo de desenvolvimento
+### O servidor inciará na porta:3000 - acesse http://localhost:3000
 ```bash
     npm run dev
 ```
-# O servidor inciará na porta:3000 - acesse http://localhost:3000
 
-# Execute o servidor json-server
+## Execute o servidor json-server
+### A Api inciará na porta:3001 - acesse http://localhost:3001
 ```bash
     json-server --watch db.json --port 3001
 ```
-# A Api inciará na porta:3001 - acesse http://localhost:3001
   
 
 ## :soon: Implementação futura
-* Novos Projetos
-* Transformar em Next.js
+* Alterar 
+* Cadastar
 
 ## :handshake: Colaboradores
 <table>
