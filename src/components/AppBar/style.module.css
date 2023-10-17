@@ -1,0 +1,31 @@
+.appBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.navLinks > a{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;   
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px; 
+}
+.navLinks > a:hover{
+    color: #ccc;
+}
+
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
