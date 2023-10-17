@@ -1,0 +1,13 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: wrap;
+}

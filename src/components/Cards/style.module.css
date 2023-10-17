@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     padding: 1rem;
 
+
 }
 
 .card {
@@ -13,6 +14,7 @@
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 .card:hover {
@@ -41,8 +43,8 @@
     margin: 0.5rem 0;
 }
 
-.card button {
-    display: block;
+.card a {
+    display: flex;
     width: 100%;
     padding: 0.5rem 1rem;
     border: none;
@@ -51,10 +53,11 @@
     font-size: 1.2rem;
     border-radius: 5px;
     cursor: pointer;
-    
+    justify-content: center;
+    text-decoration: none; 
 }
 
-.card button:hover {
+.card a:hover {
     background-color: #f1356d;
     opacity: 0.8;
 }

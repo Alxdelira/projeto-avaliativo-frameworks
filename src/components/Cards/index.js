@@ -1,21 +1,27 @@
+import { useState } from 'react'
 import style from './style.module.css'
+import { BiMap } from 'react-icons/bi'
+import Link from 'next/link'
 
-export default function Cards({ item }) {
+export default function Cards({ evento, href }) {
     return (
-        <>
+        <>     
             <div className={style.container}>
                 <div className={style.card}>
-                    <h2>{item.titulo}</h2>
-                    <img src={item.imagem} alt={item.titulo} />
-                    {/* <p>{item.descricao}</p> */}
-                    <h3>{item.local}</h3>
+                    {/* <span>{evento.id}</span> */}
+                    <h2>{evento.titulo}</h2>
+                    <img src={evento.imagem} alt={evento.titulo} />
+                    {/* <p>{evento.descricao}</p> */}
+                    <h3>
+                        <BiMap />
+                        {evento.local}</h3>
                     <div className={style.tags}>
-                        <h6>{item.dataInicio}</h6>
+                        <h6>{evento.dataInicio}</h6>
                         <hr />
-                        <h6>{item.dataFim}</h6>
+                        <h6>{evento.dataFim}</h6>
                     </div>
                     <div className={style.content}>
-                        <button>Ver mais</button>
+                        <Link href={href}>Ver mais</Link>
                     </div>
                 </div>
             </div>

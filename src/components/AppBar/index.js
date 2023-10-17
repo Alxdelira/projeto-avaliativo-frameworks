@@ -5,7 +5,7 @@ export default function AppBar({ children }) {
     return (
         <div className={style.appBar}>
             <div className={style.navLinks}>
-                <Link href="/">Home</Link>
+                <Link href="/eventos">Home</Link>
                 <Link href="/cadastrar">Cadastrar</Link>
                 <Link href="/alterar">Alterar</Link>
             </div>
