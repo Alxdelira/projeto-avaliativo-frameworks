@@ -1,185 +1,184 @@
 {
-    "eventos": [
-      {
-        "id": 1,
-        "titulo": "Workshop de Bioinformática Avançada",
-        "descricao": "Participe deste workshop que explora a integração entre a biologia e a tecnologia da informação, focado em técnicas avançadas de bioinformática. Venha descobrir as inovações que estão moldando o futuro da pesquisa biológica.",
-        "dataInicio": "2023-11-15",
-        "dataFim": "2023-11-18",
-        "local": "Universidade Federal de São Paulo",
-        "imagem": "/imagem1.png"
-      },
-      {
-        "id": 2,
-        "titulo": "Conferência de Desenvolvimento de Software",
-        "descricao": "Uma conferência imperdível para desenvolvedores FullStack em Node.js e Typescript. Aprenda com especialistas e fique atualizado com as últimas tendências em programação.",
-        "dataInicio": "2023-12-10",
-        "dataFim": "2023-12-12",
-        "local": "Centro de Convenções de Vilhena",
-        "imagem": "/imagem2.jpg"
-      },
-      {
-        "id": 3,
-        "titulo": "Encontro de Maçons",
-        "descricao": "Junte-se a outros membros da Maçonaria em um encontro especial para discutir segredos e filosofia maçônica.",
-        "dataInicio": "2023-11-20",
-        "dataFim": "2023-11-22",
-        "local": "Loja Maçônica Estrela do Norte",
-        "imagem": "/imagem3.jpg"
-      },
-      {
-        "id": 4,
-        "titulo": "Conferência de Ocultismo e Mistérios",
-        "descricao": "Explore os segredos do ocultismo e teorias conspiratórias neste evento emocionante.",
-        "dataInicio": "2023-10-28",
-        "dataFim": "2023-10-30",
-        "local": "Mansão Enigmática",
-        "imagem": "/imagem4.jpg"
-      },
-      {
-        "id": 5,
-        "titulo": "Palestra sobre Tecnologia Alienígena",
-        "descricao": "Descubra as últimas teorias sobre tecnologia alienígena e avistamentos de OVNIs.",
-        "dataInicio": "2023-11-05",
-        "dataFim": "2023-11-05",
-        "local": "Centro de Pesquisas Extraterrestres",
-        "imagem": "/imagem5.jpg"
-      },
-      {
-        "id": 6,
-        "titulo": "Curso de Hacking Ético",
-        "descricao": "Aprenda as habilidades necessárias para se tornar um hacker ético neste curso abrangente.",
-        "dataInicio": "2023-12-05",
-        "dataFim": "2023-12-09",
-        "local": "Instituto de Cibersegurança",
-        "imagem": "/imagem6.jpg"
-      },
-      {
-        "id": 7,
-        "titulo": "Workshop de Programação em Node.js",
-        "descricao": "Aprimore suas habilidades em Node.js com este workshop prático ministrado por especialistas.",
-        "dataInicio": "2023-11-25",
-        "dataFim": "2023-11-27",
-        "local": "Centro de Treinamento de Desenvolvedores",
-        "imagem": "/imagem7.jpg"
-      },
-      {
-        "id": 8,
-        "titulo": "Conferência de Teorias Conspiratórias",
-        "descricao": "Uma conferência que explora as teorias mais intrigantes e misteriosas do mundo. Prepare-se para questionar a realidade.",
-        "dataInicio": "2023-12-15",
-        "dataFim": "2023-12-17",
-        "local": "Centro de Conspirações Obscuras",
-        "imagem": "/imagem8.jpg"
-      },
-      {
-        "id": 9,
-        "titulo": "Encontro de Desenvolvedores de Software da NASA",
-        "descricao": "Junte-se a outros desenvolvedores de software e explore os projetos mais recentes da NASA.",
-        "dataInicio": "2023-11-10",
-        "dataFim": "2023-11-12",
-        "local": "NASA Ames Research Center",
-        "imagem": "/imagem9.jpg"
-      },
-      {
-        "id": 10,
-        "titulo": "Seminário de Segredos e Mistérios",
-        "descricao": "Descubra segredos antigos e mistérios ocultos neste seminário envolvente.",
-        "dataInicio": "2023-11-30",
-        "dataFim": "2023-12-02",
-        "local": "Local Secreto",
-        "imagem": "/imagem10.jpg"
-      },
-      {
-        "id": 11,
-        "titulo": "Conferência de Bioinformática",
-        "descricao": "Explore os avanços mais recentes em bioinformática e sua aplicação na pesquisa biológica.",
-        "dataInicio": "2023-12-08",
-        "dataFim": "2023-12-10",
-        "local": "Centro de Pesquisas em Genômica",
-        "imagem": "/imagem11.jpg"
-      },
-      {
-        "id": 12,
-        "titulo": "Encontro Alienígena",
-        "descricao": "Uma reunião para aqueles interessados em discutir avistamentos de alienígenas e experiências extraterrestres.",
-        "dataInicio": "2023-11-10",
-        "dataFim": "2023-11-12",
-        "local": "Área 51",
-        "imagem": "/imagem12.jpg"
-      },
-      {
-        "id": 13,
-        "titulo": "Curso de Hacking Ético Avançado",
-        "descricao": "Aprofunde-se no mundo do hacking ético com este curso avançado. Apenas para os mais experientes.",
-        "dataInicio": "2023-11-22",
-        "dataFim": "2023-11-26",
-        "local": "Instituto Avançado de Cibersegurança",
-        "imagem": "/imagem13.jpg"
-      },
-      {
-        "id": 14,
-        "titulo": "Workshop de Programação em Typescript",
-        "descricao": "Aprimore suas habilidades em Typescript com este workshop prático ministrado por especialistas.",
-        "dataInicio": "2023-12-01",
-        "dataFim": "2023-12-03",
-        "local": "Centro de Treinamento de Desenvolvedores",
-        "imagem": "/imagem14.jpg"
-      },
-      {
-        "id": 15,
-        "titulo": "Encontro de Programadores Ocultistas",
-        "descricao": "Reúna-se com outros programadores interessados em ocultismo e compartilhe seus conhecimentos.",
-        "dataInicio": "2023-12-05",
-        "dataFim": "2023-12-05",
-        "local": "Templo do Conhecimento Oculto",
-        "imagem": "/imagem15.jpg"
-      },
-      {
-        "id": 16,
-        "titulo": "Conferência de Tecnologia Alienígena",
-        "descricao": "Uma conferência para explorar avanços na tecnologia que podem ter origem alienígena.",
-        "dataInicio": "2023-11-30",
-        "dataFim": "2023-12-02",
-        "local": "Centro de Pesquisas Extraterrestres",
-        "imagem": "/imagem16.jpg"
-      },
-      {
-        "id": 17,
-        "titulo": "Curso de Segredos e Conspirações",
-        "descricao": "Aprenda sobre os segredos e teorias conspiratórias mais famosas do mundo neste curso intrigante.",
-        "dataInicio": "2023-12-18",
-        "dataFim": "2023-12-20",
-        "local": "Instituto de Conspirações",
-        "imagem": "/imagem17.jpg"
-      },
-      {
-        "id": 18,
-        "titulo": "Encontro da Sociedade dos Sapientes",
-        "descricao": "Uma reunião exclusiva para os mais sábios, onde segredos antigos são compartilhados e discutidos.",
-        "dataInicio": "2023-11-28",
-        "dataFim": "2023-11-29",
-        "local": "Local Sagrado da Sabedoria",
-        "imagem": "/imagem18.jpg"
-      },
-      {
-        "id": 19,
-        "titulo": "Conferência de Desenvolvedores da NASA",
-        "descricao": "Explore os projetos de desenvolvimento de software mais recentes da NASA e colabore com especialistas.",
-        "dataInicio": "2023-11-15",
-        "dataFim": "2023-11-18",
-        "local": "NASA Ames Research Center",
-        "imagem": "/imagem19.jpg"
-      },
-      {
-        "id": 20,
-        "titulo": "Seminário sobre Segredos e Mistérios Antigos",
-        "descricao": "Descubra segredos ancestrais e mistérios que perduram ao longo das eras neste seminário enigmático.",
-        "dataInicio": "2023-11-20",
-        "dataFim": "2023-11-22",
-        "local": "Templo dos Antigos Segredos",
-        "imagem": "/imagem20.jpg"
-      }
-    ]
-  }
-  
+  "eventos": [
+    {
+      "id": 1,
+      "titulo": "Workshop de Bioinformática Avançada",
+      "descricao": "Participe deste workshop que explora a integração entre a biologia e a tecnologia da informação, focado em técnicas avançadas de bioinformática. Venha descobrir as inovações que estão moldando o futuro da pesquisa biológica.",
+      "dataInicio": "2023-11-15",
+      "dataFim": "2023-11-18",
+      "local": "Universidade Federal de São Paulo",
+      "imagem": "/imagem1.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Conferência de Desenvolvimento de Software",
+      "descricao": "Uma conferência imperdível para desenvolvedores FullStack em Node.js e Typescript. Aprenda com especialistas e fique atualizado com as últimas tendências em programação.",
+      "dataInicio": "2023-12-10",
+      "dataFim": "2023-12-12",
+      "local": "Centro de Convenções de Vilhena",
+      "imagem": "/imagem2.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Encontro de Maçons",
+      "descricao": "Junte-se a outros membros da Maçonaria em um encontro especial para discutir segredos e filosofia maçônica.",
+      "dataInicio": "2023-11-20",
+      "dataFim": "2023-11-22",
+      "local": "Loja Maçônica Estrela do Norte",
+      "imagem": "/imagem3.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Conferência de Ocultismo e Mistérios",
+      "descricao": "Explore os segredos do ocultismo e teorias conspiratórias neste evento emocionante.",
+      "dataInicio": "2023-10-28",
+      "dataFim": "2023-10-30",
+      "local": "Mansão Enigmática",
+      "imagem": "/imagem4.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Palestra sobre Tecnologia Alienígena",
+      "descricao": "Descubra as últimas teorias sobre tecnologia alienígena e avistamentos de OVNIs.",
+      "dataInicio": "2023-11-05",
+      "dataFim": "2023-11-05",
+      "local": "Centro de Pesquisas Extraterrestres",
+      "imagem": "/imagem5.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Curso de Hacking Ético",
+      "descricao": "Aprenda as habilidades necessárias para se tornar um hacker ético neste curso abrangente.",
+      "dataInicio": "2023-12-05",
+      "dataFim": "2023-12-09",
+      "local": "Instituto de Cibersegurança",
+      "imagem": "/imagem6.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "Workshop de Programação em Node.js",
+      "descricao": "Aprimore suas habilidades em Node.js com este workshop prático ministrado por especialistas.",
+      "dataInicio": "2023-11-25",
+      "dataFim": "2023-11-27",
+      "local": "Centro de Treinamento de Desenvolvedores",
+      "imagem": "/imagem7.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Conferência de Teorias Conspiratórias",
+      "descricao": "Uma conferência que explora as teorias mais intrigantes e misteriosas do mundo. Prepare-se para questionar a realidade.",
+      "dataInicio": "2023-12-15",
+      "dataFim": "2023-12-17",
+      "local": "Centro de Conspirações Obscuras",
+      "imagem": "/imagem8.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "Encontro de Desenvolvedores de Software da NASA",
+      "descricao": "Junte-se a outros desenvolvedores de software e explore os projetos mais recentes da NASA.",
+      "dataInicio": "2023-11-10",
+      "dataFim": "2023-11-12",
+      "local": "NASA Ames Research Center",
+      "imagem": "/imagem9.jpg"
+    },
+    {
+      "id": 10,
+      "titulo": "Seminário de Segredos e Mistérios",
+      "descricao": "Descubra segredos antigos e mistérios ocultos neste seminário envolvente.",
+      "dataInicio": "2023-11-30",
+      "dataFim": "2023-12-02",
+      "local": "Local Secreto",
+      "imagem": "/imagem10.jpg"
+    },
+    {
+      "id": 11,
+      "titulo": "Conferência de Bioinformática",
+      "descricao": "Explore os avanços mais recentes em bioinformática e sua aplicação na pesquisa biológica.",
+      "dataInicio": "2023-12-08",
+      "dataFim": "2023-12-10",
+      "local": "Centro de Pesquisas em Genômica",
+      "imagem": "/imagem11.jpg"
+    },
+    {
+      "id": 12,
+      "titulo": "Encontro Alienígena",
+      "descricao": "Uma reunião para aqueles interessados em discutir avistamentos de alienígenas e experiências extraterrestres.",
+      "dataInicio": "2023-11-10",
+      "dataFim": "2023-11-12",
+      "local": "Área 51",
+      "imagem": "/imagem12.jpg"
+    },
+    {
+      "id": 13,
+      "titulo": "Curso de Hacking Ético Avançado",
+      "descricao": "Aprofunde-se no mundo do hacking ético com este curso avançado. Apenas para os mais experientes.",
+      "dataInicio": "2023-11-22",
+      "dataFim": "2023-11-26",
+      "local": "Instituto Avançado de Cibersegurança",
+      "imagem": "/imagem13.jpg"
+    },
+    {
+      "id": 14,
+      "titulo": "Workshop de Programação em Typescript",
+      "descricao": "Aprimore suas habilidades em Typescript com este workshop prático ministrado por especialistas.",
+      "dataInicio": "2023-12-01",
+      "dataFim": "2023-12-03",
+      "local": "Centro de Treinamento de Desenvolvedores",
+      "imagem": "/imagem14.jpg"
+    },
+    {
+      "id": 15,
+      "titulo": "Encontro de Programadores Ocultistas",
+      "descricao": "Reúna-se com outros programadores interessados em ocultismo e compartilhe seus conhecimentos.",
+      "dataInicio": "2023-12-05",
+      "dataFim": "2023-12-05",
+      "local": "Templo do Conhecimento Oculto",
+      "imagem": "/imagem15.jpg"
+    },
+    {
+      "id": 16,
+      "titulo": "Conferência de Tecnologia Alienígena",
+      "descricao": "Uma conferência para explorar avanços na tecnologia que podem ter origem alienígena.",
+      "dataInicio": "2023-11-30",
+      "dataFim": "2023-12-02",
+      "local": "Centro de Pesquisas Extraterrestres",
+      "imagem": "/imagem16.jpg"
+    },
+    {
+      "id": 17,
+      "titulo": "Curso de Segredos e Conspirações",
+      "descricao": "Aprenda sobre os segredos e teorias conspiratórias mais famosas do mundo neste curso intrigante.",
+      "dataInicio": "2023-12-18",
+      "dataFim": "2023-12-20",
+      "local": "Instituto de Conspirações",
+      "imagem": "/imagem17.jpg"
+    },
+    {
+      "id": 18,
+      "titulo": "Encontro da Sociedade dos Sapientes",
+      "descricao": "Uma reunião exclusiva para os mais sábios, onde segredos antigos são compartilhados e discutidos.",
+      "dataInicio": "2023-11-28",
+      "dataFim": "2023-11-29",
+      "local": "Local Sagrado da Sabedoria",
+      "imagem": "/imagem18.jpg"
+    },
+    {
+      "id": 19,
+      "titulo": "Conferência de Desenvolvedores da NASA",
+      "descricao": "Explore os projetos de desenvolvimento de software mais recentes da NASA e colabore com especialistas.",
+      "dataInicio": "2023-11-15",
+      "dataFim": "2023-11-18",
+      "local": "NASA Ames Research Center",
+      "imagem": "/imagem19.jpg"
+    },
+    {
+      "id": 20,
+      "titulo": "Seminário sobre Segredos e Mistérios Antigos",
+      "descricao": "Descubra segredos ancestrais e mistérios que perduram ao longo das eras neste seminário enigmático.",
+      "dataInicio": "2023-11-20",
+      "dataFim": "2023-11-22",
+      "local": "Templo dos Antigos Segredos",
+      "imagem": "/imagem20.jpg"
+    }   
+  ]
+}

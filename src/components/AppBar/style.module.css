@@ -1,31 +1,54 @@
 .appBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 20px;
-    height: 60px;
-    background-color: #000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    height: 80px;
+    background-color: #040224;
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.3);
     color: #fff;
+
 }
 
-.navLinks > a{
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;   
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.2rem;
+    margin: 2rem;
+
+
+}
+
+.navLinks>a {
     text-decoration: none;
     color: #fff;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
-.navLinks > a:hover{
+
+.navLinks>a:hover {
     color: #ccc;
 }
 
 
 .titulo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 0.2rem;
+    margin: 2rem;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    font-weight: 700 bold;
     color: #fff;
+}
+
+.titulo h2 {
+    font-size: 1rem;
+    color: #f80606;
+    margin-left: .3rem;
+
 }

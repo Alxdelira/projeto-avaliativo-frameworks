@@ -57,9 +57,7 @@ export default function EventoPage() {
                         {eventos?.local}
                     </Label>
                 </div>
-            </div>
-
-        </>
+            </div>   </>
     )
 
 }

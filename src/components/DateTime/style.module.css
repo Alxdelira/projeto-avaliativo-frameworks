@@ -1,0 +1,17 @@
+.data input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    appearance: none;
+}
+
+.data input::before {
+    content: "\25B6";
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 18px;
+    color: #007BFF;
+}

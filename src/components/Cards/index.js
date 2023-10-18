@@ -6,18 +6,18 @@ import Link from 'next/link'
 export default function Cards({ evento, href }) {
     return (
         <>     
-            <div className={style.container}>
+            <div className={style.container}>                
                 <div className={style.card}>
                     {/* <span>{evento.id}</span> */}
-                    <h2>{evento.titulo}</h2>
                     <img src={evento.imagem} alt={evento.titulo} />
                     {/* <p>{evento.descricao}</p> */}
-                    <h3>
+                    {/* <h3>
                         <BiMap />
-                        {evento.local}</h3>
+                    {evento.local}</h3> */}
+                    <h2>{evento.titulo}</h2>
                     <div className={style.tags}>
-                        <h6>{evento.dataInicio}</h6>
-                        <hr />
+                        <h6>De</h6>
+                        <h6>{evento.dataInicio}</h6><h6>a</h6>                        
                         <h6>{evento.dataFim}</h6>
                     </div>
                     <div className={style.content}>
