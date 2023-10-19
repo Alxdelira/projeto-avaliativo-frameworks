@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
                 <div className={style.separador}></div>
                 <div className={style.texto} >
-                    <p>Alexandre Nofueira de Lira - VHA/RO</p>
+                    <p>Alexandre Nogueira de Lira - Vilhena/RO</p>
                     <p>© 2023 All Rights Reserved.</p>
                 </div>
             </div>

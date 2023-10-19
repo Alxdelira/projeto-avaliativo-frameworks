@@ -5,14 +5,20 @@ import { useEffect, useState } from 'react';
 import style from '@/styles/Home.module.css';
 import Filtro from '@/components/Filtro';
 import { api } from '@/service/apiClient';
+import Scroll from '@/components/Scroll';
+
 
 export default function Eventos() {
   const [eventos, setEventos] = useState([]);
+  const [page, setPage] = useState()
 
   const getEventos = async () => {
     try {
-      const res = await api.get('/eventos');
-      setEventos(res.data.docs);
+      const res = await api.get(`/eventos/`);
+      setEventos(res.data);
+
+      console.log(res.data)
+
     } catch (error) {
       console.log(error);
     }
@@ -30,14 +36,19 @@ export default function Eventos() {
   return (
     <>
       <Filtro />
+      <Scroll />
       <div className={style.texto}>
         <h1>EVENTOS DA PLATAFORMA</h1>
         <h3>Apresenta informações dos eventos cadastrados na Plataforma</h3>
         <div className={style.separador} />
       </div>
       <Container>
-        {eventos?.map((evento) => (
-          <Cards key={evento._id} evento={evento} href={`/eventos/${evento.id}`} />
+        {eventos?.map((evento, _id) => (
+          <Cards
+            key={evento._id}
+            evento={evento}
+            href={`/eventos/${evento.id}`}
+          />
         ))}
       </Container>
     </>

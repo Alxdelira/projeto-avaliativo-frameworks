@@ -65,4 +65,53 @@
 .page {
     display: flex;
     align-items: center;
+
 }
+
+.page svg {
+    height: 80px;
+    width: 80px;
+    margin-left: 15px;
+    color: #027cf7;
+}
+
+.page h1 {
+    background-color: #027cf7;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+.titulo input:focus {
+    border-color: #027cf7;
+}
+.reset {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reset a {
+    text-decoration: none;
+    background-color: #f70202;
+    color: #FFF;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.reset a:hover {
+    background-color: #c52121;
+}
+
+
+.mensagemSucesso {
+    display: flex;
+    position:absolute ;
+   background-color: #1ae907;
+   color: #FFF;
+   padding: 20px;
+   border-radius: 5px;
+
+}
+  
+  

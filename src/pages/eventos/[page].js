@@ -3,10 +3,10 @@ import Loading from "@/components/Loading";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { BiMap } from "react-icons/bi";
-import style from './style.module.css'
 import Message from "@/components/Mensage";
-import axios from "axios";
 import { api } from "@/service/apiClient";
+import Image from "next/image";
+import style from '@/styles/page.module.css'
 
 export default function EventoPage() {
 
@@ -38,9 +38,12 @@ export default function EventoPage() {
 
     if (eventos) return (
         <>
-            <div className={style.content} >
-                <h1>{eventos.titulo}</h1>
-                <img
+            <div className={style.conteiner} >
+                <h1 className={style.titulo}>{eventos.titulo}</h1>
+                <Image
+                className={style.image}
+                    width={400}
+                    height={400}
                     src={eventos.imagem}                    
                 />
                 <div className={style.text}>
@@ -48,10 +51,10 @@ export default function EventoPage() {
                     <Label>{eventos.dataInicio}</Label>
                     <Label>{eventos.dataFim}</Label>
                 </div>
-                <div className={style.local}>
+                <div className={style.local} >
                     <Label>
                         <BiMap />
-                        {eventos?.local}
+                        {eventos.local}
                     </Label>
                 </div>
             </div>   </>

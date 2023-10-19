@@ -1,0 +1,43 @@
+ 
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .image {
+    border: 2px solid #333;
+    border-radius: 10px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .local {
+    margin-top: 20px;
+  }
+  
+ 
+  .text label {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+ 
+  .local svg {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #007bff;  
+  }

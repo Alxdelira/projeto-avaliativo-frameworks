@@ -9,12 +9,31 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px; 
+
 }
 
+
 .card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(1, 18, 255, 0.5);
+    animation-name: flutuacao;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flutuacao {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .card img {
@@ -26,8 +45,9 @@
 
 .card h2 {
     font-size: 1rem;
-    margin: .5rem ;
+    margin: .5rem;
 }
+
 .card h6 {
     font-size: 0.8rem;
     margin: .5rem 0;
@@ -45,24 +65,25 @@
     width: 100%;
     padding: 0.5rem 1rem;
     border: none;
-    background-color: #f80606;
+    background-color: #027cf7;
     color: #fff;
     font-size: 1.2rem;
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .card a:hover {
-    background-color: #f80606;
+    background-color: #1568bb;
     opacity: 0.8;
 }
 
 .tags {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
+
 .content {
     display: flex;
     flex-direction: column;
