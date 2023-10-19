@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { BiMap } from "react-icons/bi";
 import style from './style.module.css'
 import Message from "@/components/Mensage";
+import axios from "axios";
 
 export default function EventoPage() {
 
@@ -14,13 +15,8 @@ export default function EventoPage() {
 
     async function getEventosID() {
         try {
-            const res = await fetch(`http://localhost:3001/eventos/${page}`, {
-                method: "GET",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            });
-            const data = await res.json();
+            const res = await axios.get(`http://localhost:3001/eventos/${page}`);
+            const data = await res.data;
             setEventos(data);
         } catch (error) {
             console.log(error)

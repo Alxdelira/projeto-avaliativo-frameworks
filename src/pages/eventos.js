@@ -4,19 +4,15 @@ import Loading from '@/components/Loading';
 import { useEffect, useState } from 'react';
 import style from '@/styles/Home.module.css';
 import Filtro from '@/components/Filtro';
+import axios from 'axios';
 
 export default function Eventos() {
   const [eventos, setEventos] = useState([]);
 
   const getEventos = async () => {
     try {
-      const res = await fetch(`http://localhost:3001/eventos`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-      const data = await res.json();
+      const res = await axios.get('http://localhost:3001/eventos');
+      const data = await res.data; 
       setEventos(data);
     } catch (error) {
       console.log(error);
