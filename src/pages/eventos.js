@@ -4,16 +4,15 @@ import Loading from '@/components/Loading';
 import { useEffect, useState } from 'react';
 import style from '@/styles/Home.module.css';
 import Filtro from '@/components/Filtro';
-import axios from 'axios';
+import { api } from '@/service/apiClient';
 
 export default function Eventos() {
   const [eventos, setEventos] = useState([]);
 
   const getEventos = async () => {
     try {
-      const res = await axios.get('http://localhost:3001/eventos');
-      const data = await res.data; 
-      setEventos(data);
+      const res = await api.get('/eventos');
+      setEventos(res.data.docs);
     } catch (error) {
       console.log(error);
     }
@@ -37,8 +36,8 @@ export default function Eventos() {
         <div className={style.separador} />
       </div>
       <Container>
-        {eventos.map((evento) => (
-          <Cards key={evento.id} evento={evento} href={`/eventos/${evento.id}`} />
+        {eventos?.map((evento) => (
+          <Cards key={evento._id} evento={evento} href={`/eventos/${evento.id}`} />
         ))}
       </Container>
     </>
