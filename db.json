@@ -2,11 +2,11 @@
   "eventos": [
     {
       "id": 1,
-      "titulo": "Workshop de Bioinformática Avançada",
-      "descricao": "Participe deste workshop que explora a integração entre a biologia e a tecnologia da informação, focado em técnicas avançadas de bioinformática. Venha descobrir as inovações que estão moldando o futuro da pesquisa biológica.",
-      "dataInicio": "2023-11-15",
-      "dataFim": "2023-11-18",
-      "local": "Universidade Federal de São Paulo",
+      "titulo": "Workshop de Programação de Biomedicina",
+      "descricao": "Uma conferência imperdível para desenvolvedores FullStack em Node.js e Typescript. Aprenda com especialistas e fique atualizado com as últimas tendências em programação.",
+      "dataInicio": "2023-12-10",
+      "dataFim": "2023-12-12",
+      "local": "Centro de Convenções de Vilhena",
       "imagem": "/imagem1.png"
     },
     {
@@ -179,6 +179,6 @@
       "dataFim": "2023-11-22",
       "local": "Templo dos Antigos Segredos",
       "imagem": "/imagem20.jpg"
-    }    
+    }
   ]
 }

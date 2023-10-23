@@ -1,6 +1,6 @@
 import style from './style.module.css'
 
-export default function Input({ type, onChange, value, id, placeholder, ...props }) {
+export default function Input({ type, onChange, value, id, placeholder, props }) {
     return (
         <>
             <div className={style.content}>
