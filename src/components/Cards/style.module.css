@@ -16,25 +16,10 @@
 
 .card:hover {
     box-shadow: 0 0 10px rgba(1, 18, 255, 0.5);
-    animation-name: flutuacao;
-    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
-@keyframes flutuacao {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-30px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
 
 .card img {
     width: 100%;

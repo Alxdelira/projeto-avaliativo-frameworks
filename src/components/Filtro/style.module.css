@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     height: 250px;
     background-color: #040224;
     box-shadow: 0 0 5px rgba(54, 52, 52, 0.3);
@@ -48,6 +48,11 @@
     font-weight: 700;
     background-color: #040224;
     cursor: pointer;
+    margin-left: 8px;
+}
+.inputBusca button:hover {    
+    background-color: #027cf7;
+  
 }
 
 .texto {

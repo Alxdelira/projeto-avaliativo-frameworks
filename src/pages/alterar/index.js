@@ -15,7 +15,6 @@ export default function AlterarEvento() {
   const [eventos, setEventos] = useState([]);
   const [selectId, setSelectedUserId] = useState(null);
   const [modal, setModal] = useState(false);
-  const [modalDelete, setModalDelete] = useState(false);
   const [formData, setFormData] = useState({
     titulo: "",
     descricao: "",
@@ -29,8 +28,8 @@ export default function AlterarEvento() {
     e.preventDefault();
     try {
       const res = await api.put(`/eventos/${selectId}`, formData);
+      getEventos();     
       setModal(false);
-      getEventos();
     } catch (error) {
       console.log(error);
     }
@@ -71,14 +70,14 @@ export default function AlterarEvento() {
 
   return (
     <>
-      {modal && (
-        <Modal
-          minWidth="40%"
-          modalTitle={`Atualizar Evento:`}
-          isOpen={() => setModal(false)}
-          onClose={setModal}
-          xClose={true}
-        >
+           {modal && (
+             <Modal
+             minWidth="40%"
+             modalTitle={`Atualizar Evento:`}
+             isOpen={() => setModal(false)}
+             onClose={setModal}
+             xClose={true}
+             >
           <form onSubmit={updateEvento}>
             <div>
               <div>
@@ -99,15 +98,16 @@ export default function AlterarEvento() {
                   onChange={(e) =>
                     setFormData({ ...formData, descricao: e.target.value })
                   }
-                />
+                  />
               </div>
+                
               <div>
                 <label htmlFor="dataInicio">Começa em:</label>
                 <DataTime
                   id={"dataInicio"}
                   value={formData.dataInicio}
-                  onChange={(value) =>
-                    setFormData({ ...formData, dataInicio: value })
+                  onChange={(e) =>
+                    setFormData({ ...formData, dataInicio: e.target.value })
                   }
                 />
               </div>
@@ -116,8 +116,8 @@ export default function AlterarEvento() {
                 <DataTime
                   id="dataFim"
                   value={formData.dataFim}
-                  onChange={(value) =>
-                    setFormData({ ...formData, dataFim: value })
+                  onChange={(e) =>
+                    setFormData({ ...formData, dataFim: e.target.value })
                   }
                 />
               </div>
@@ -136,7 +136,9 @@ export default function AlterarEvento() {
                 <Input type={"file"} id="imagem" />
               </div>
               <div>
-                <Button type={"submit"}>Enviar</Button>
+                <Button type="submit" onClick={() => getEventos()}>
+                  salvar
+                </Button>
               </div>
             </div>
           </form>

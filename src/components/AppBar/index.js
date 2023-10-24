@@ -9,9 +9,9 @@ export default function AppBar() {
                     <h1>PLATAFORMA</h1>
                     <h2>EVENTO</h2>                    
                     <div className={style.navLinks}>
+                        <Link href="/">Home</Link>
                         <Link href="/eventos">Eventos</Link>
-                        <Link href="/certificados">Certificados</Link>
-                        <Link href="/manuais">Manuais</Link>
+                        <Link href="https://alxdelira.github.io/projeto-links/" target='_blank'>Contato</Link>
                     </div>
                 </div>
             </div>             

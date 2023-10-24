@@ -49,10 +49,22 @@
   }
 
   .td  .deletar:hover {    
-    background-color: rgb(238, 9, 9);   
+    background-color: rgb(238, 9, 9);
+    color: white;   
 
   }
   .td  .alterar:hover {    
     background-color: rgb(28, 238, 9);   
+    color: white;   
 
   }
+
+  .mensagemSucesso {
+    display: flex;
+    position:absolute ;
+   background-color: #1ae907;
+   color: #FFF;
+   padding: 20px;
+   border-radius: 5px;
+
+}

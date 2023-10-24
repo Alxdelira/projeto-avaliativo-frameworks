@@ -44,7 +44,8 @@ export default function EventoPage() {
                 className={style.image}
                     width={400}
                     height={400}
-                    src={eventos.imagem}                    
+                    src={eventos.imagem}  
+                    alt={eventos.titulo}                  
                 />
                 <div className={style.text}>
                     <Label>{eventos.descricao}</Label>
@@ -57,7 +58,8 @@ export default function EventoPage() {
                         {eventos.local}
                     </Label>
                 </div>
-            </div>   </>
+            </div>  
+             </>
     )
 
 }
