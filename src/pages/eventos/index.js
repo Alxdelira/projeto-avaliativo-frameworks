@@ -9,7 +9,6 @@ import Scroll from "@/components/Scroll";
 
 export default function Eventos() {
   const [eventos, setEventos] = useState([]);
-  const [page, setPage] = useState();
 
   const getEventos = async () => {
     try {
