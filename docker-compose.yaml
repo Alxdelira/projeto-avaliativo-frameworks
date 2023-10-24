@@ -1,0 +1,15 @@
+services:
+  front-eventos:
+    build:
+      context: .
+      dockerfile: front.Dockerfile
+    environment:
+      - NEXT_PUBLIC_DBURL=http://localhost:3001
+    ports:
+      - 3000:3000
+  fakeapi-eventos:
+    build:
+      context: .
+      dockerfile: fakeapi.Dockerfile
+    ports:
+      - 3001:3001
