@@ -12,6 +12,6 @@ export const formatData = (data) => {
   
     const [dia, mes, ano] = dataForFormat.split("/")
   
-    return `${ano}-${mes}-${dia}`
+    return `${dia}-${mes}-${ano}`
   }
   

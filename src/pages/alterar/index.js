@@ -10,8 +10,13 @@ import DataTime from "@/components/DateTime/Index";
 import Input from "@/components/Input";
 import Button from "@/components/Button";
 import Scroll from "@/components/Scroll";
+import { formatData } from "@/utils/mascara";
 
 export default function AlterarEvento() {
+
+  const [cadastroSucesso, setCadastroSucesso] = useState(false);
+  const [deletadoSucesso, setDeletadoSucesso] = useState(false);
+  
   const [eventos, setEventos] = useState([]);
   const [selectId, setSelectedUserId] = useState(null);
   const [modal, setModal] = useState(false);
@@ -28,7 +33,11 @@ export default function AlterarEvento() {
     e.preventDefault();
     try {
       const res = await api.put(`/eventos/${selectId}`, formData);
-      getEventos();     
+      setCadastroSucesso(true);
+      setTimeout(() => {
+        setCadastroSucesso(false);
+      }, 3000);
+      getEventos();
       setModal(false);
     } catch (error) {
       console.log(error);
@@ -60,24 +69,29 @@ export default function AlterarEvento() {
       await api.delete(`/eventos/${id}`);
       const updatedEventos = eventos.filter((evento) => evento.id !== id);
       setEventos(updatedEventos);
+      setDeletadoSucesso(true);
+      setTimeout(() => {
+        setDeletadoSucesso(false);
+      }, 3000);
     } catch (error) {
       console.log(error);
     }
   };
+
   useEffect(() => {
     getEventos();
   }, []);
 
   return (
     <>
-           {modal && (
-             <Modal
-             minWidth="40%"
-             modalTitle={`Atualizar Evento:`}
-             isOpen={() => setModal(false)}
-             onClose={setModal}
-             xClose={true}
-             >
+      {modal && (
+        <Modal
+          minWidth="40%"
+          modalTitle={`Atualizar Evento:`}
+          isOpen={() => setModal(false)}
+          onClose={setModal}
+          xClose={true}
+        >
           <form onSubmit={updateEvento}>
             <div>
               <div>
@@ -98,9 +112,9 @@ export default function AlterarEvento() {
                   onChange={(e) =>
                     setFormData({ ...formData, descricao: e.target.value })
                   }
-                  />
+                />
               </div>
-                
+
               <div>
                 <label htmlFor="dataInicio">Começa em:</label>
                 <DataTime
@@ -144,11 +158,11 @@ export default function AlterarEvento() {
           </form>
         </Modal>
       )}
-    <Scroll />
+      <Scroll />
       <Container>
-      <div >
-        <h1> EDIÇÃO DE EVENTOS DA PLATAFORMA</h1>
-      </div>
+        <div >
+          <h1> EDIÇÃO DE EVENTOS DA PLATAFORMA</h1>
+        </div>
         <table className={style.tabela}>
           <thead>
             <tr className={style.tr}>
@@ -166,8 +180,8 @@ export default function AlterarEvento() {
               <tr className={style.tr}>
                 <td className={style.td}>{evento.id}</td>
                 <td className={style.td}>{evento.titulo}</td>
-                <td className={style.td}>{evento.dataInicio}</td>
-                <td className={style.td}>{evento.dataFim}</td>
+                <td className={style.td}>{formatData(evento.dataInicio)}</td>
+                <td className={style.td}>{formatData(evento.dataFim)}</td>
                 <td className={style.td}>{evento.local}</td>
                 <td className={style.td}>
                   <Image
@@ -198,6 +212,16 @@ export default function AlterarEvento() {
             </tbody>
           ))}
         </table>
+        {cadastroSucesso && (
+          <div className={style.mensagemSucesso}>
+            Alteração realizado com sucesso!
+          </div>
+        )}
+        {deletadoSucesso && (
+          <div className={style.mensagemSucesso_deleta}>
+            Evento deletado com Sucesso!
+          </div>
+        )}
       </Container>
     </>
   );

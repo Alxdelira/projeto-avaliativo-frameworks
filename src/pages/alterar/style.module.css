@@ -1,70 +1,83 @@
 .tabela {
-    box-sizing: border-box;
-    width: 100%;
-    border: .063rem solid #000000;
-    border-collapse: collapse;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #000000;
-  }
+  box-sizing: border-box;
+  width: 100%;
+  border: .063rem solid #000000;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
 
-  .td {
-    text-align: center;
-    border: 1px solid #868686;
-    padding: .5rem;
-  }
+.td {
+  text-align: center;
+  border: 1px solid #868686;
+  padding: .5rem;
+}
 
-  .th {
-    border: 1px solid #868686;
-    padding: .5rem;
-    color: white;
-    background-color:#040224;
-  }
-  .tr:hover {
-    background-color: #e5e5ee !important;
-  }
-  
-  .tr:nth-child(odd) {
-    background-color: white;
-  }
-  
-  .tr:nth-child(even) {
-    background-color: white;
-  }
+.th {
+  border: 1px solid #868686;
+  padding: .5rem;
+  color: white;
+  background-color: #040224;
+}
 
-  .td  button {
-    margin: .5rem;    
-    padding: .5rem;
-    text-align: center;
-    border: none;
-    background-color: white;   
-    border-radius: 50%;
-    cursor: pointer;
+.tr:hover {
+  background-color: #e5e5ee !important;
+}
 
-  }
-  .td svg {
-    font-size: 18px;  
+.tr:nth-child(odd) {
+  background-color: white;
+}
 
-  }
+.tr:nth-child(even) {
+  background-color: white;
+}
 
-  .td  .deletar:hover {    
-    background-color: rgb(238, 9, 9);
-    color: white;   
+.td button {
+  margin: .5rem;
+  padding: .5rem;
+  text-align: center;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
 
-  }
-  .td  .alterar:hover {    
-    background-color: rgb(28, 238, 9);   
-    color: white;   
+}
 
-  }
+.td svg {
+  font-size: 18px;
 
-  .mensagemSucesso {
-    display: flex;
-    position:absolute ;
-   background-color: #1ae907;
-   color: #FFF;
-   padding: 20px;
-   border-radius: 5px;
+}
+
+.td .deletar:hover {
+  background-color: rgb(238, 9, 9);
+  color: white;
+
+}
+
+.td .alterar:hover {
+  background-color: rgb(28, 238, 9);
+  color: white;
+
+}
+
+.mensagemSucesso {
+  display: flex;
+  position: fixed;
+  background-color: #1ae907;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.mensagemSucesso_deleta {
+  display: flex;
+  position: fixed;
+  background-color: #fc1f02;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 5px;
 
 }

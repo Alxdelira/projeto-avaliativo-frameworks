@@ -7,6 +7,7 @@ import Message from "@/components/Mensage";
 import { api } from "@/service/apiClient";
 import Image from "next/image";
 import style from '@/styles/page.module.css'
+import { formatData } from "@/utils/mascara";
 
 export default function EventoPage() {
 
@@ -38,6 +39,7 @@ export default function EventoPage() {
 
     if (eventos) return (
         <>
+        <main className={style.main}>
             <div className={style.conteiner} >
                 <h1 className={style.titulo}>{eventos.titulo}</h1>
                 <Image
@@ -48,9 +50,11 @@ export default function EventoPage() {
                     alt={eventos.titulo}                  
                 />
                 <div className={style.text}>
+                    <div className={style.descricao}>
                     <Label>{eventos.descricao}</Label>
-                    <Label>{eventos.dataInicio}</Label>
-                    <Label>{eventos.dataFim}</Label>
+                    </div>
+                    <Label>{formatData(eventos.dataInicio)}</Label>
+                    <Label>{formatData(eventos.dataFim)}</Label>
                 </div>
                 <div className={style.local} >
                     <Label>
@@ -59,6 +63,7 @@ export default function EventoPage() {
                     </Label>
                 </div>
             </div>  
+        </main>
              </>
     )
 

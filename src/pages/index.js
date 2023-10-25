@@ -1,5 +1,4 @@
 import Container from "@/components/Container";
-import Loading from "@/components/Loading";
 import { api } from "@/service/apiClient";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -25,27 +24,22 @@ export default function Home() {
     getEventos();
   }, []);
 
-  if (!eventos) {
-    return <Loading />;
-  }
-
   return (
     <>
-      <Container>
-      <div className={style.separador} />
-        <Carousel>
-          {eventos?.map((evento) => (
-            <div key={evento}>
-              <Image
-                height={600}
-                width={500}
-                src={evento.imagem}
-                alt="Imagem 3"
-              />
-              <p className="legend">{evento.titulo}</p>
-            </div>
-          ))}
-        </Carousel>
+    <Container>
+      <Carousel autoPlay={true} infiniteLoop={true} width={1080}>
+        {eventos?.map((evento) => (
+          <div key={evento}>
+            <Image
+              height={522}
+              width={900}
+              src={evento.imagem}
+              alt={evento.titulo}
+            />
+            <p className="legend">{evento.titulo}</p>
+          </div>
+        ))}
+      </Carousel>
       </Container>
     </>
   );
